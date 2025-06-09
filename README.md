@@ -1,3 +1,17 @@
+## Installation Guide:
+## Tools Used:
+- React JS
+- javascript
+- Tailwind CSS
+- Bootstrap Icon
+- Fontawesome Icon
+
+## UI/UX
+![image](https://github.com/user-attachments/assets/5c3378ae-150f-471c-9d73-45f093c8aec2)
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
