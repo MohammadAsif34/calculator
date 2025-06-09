@@ -2,7 +2,7 @@
 A sleek, user-friendly calculator application built with **React.js**, styled using **Tailwind CSS**, and enhanced with **Bootstrap Icons** and **Font Awesome**. It features a clean grid-based layout with light/dark mode toggle and a tabbed interface for `CONVERTER` and `CALCULATOR`.
 
 ## 🌟 Live Preview `+` UI/UX
-Live Review here: (https://calc-seven-taupe.vercel.app/)  
+Live Review here: (https://calculator-seven-tau-10.vercel.app/)  
 ![image](https://github.com/user-attachments/assets/5c3378ae-150f-471c-9d73-45f093c8aec2)
 
 ## ✨ Features
