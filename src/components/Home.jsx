@@ -23,8 +23,13 @@ const Home = () => {
         background:
           "radial-gradient(circle, rgba(247, 247, 247, 1) 25%, rgba(220, 232, 247, 1) 100%)",
       }}
-      className="w-full h-screen flex justify-center items-center bg-blue-50"
+      className="w-full h-screen flex justify-center relative items-center bg-blue-50"
     >
+      <div className="w-full h-5 px-20 absolute left-0 bottom-[5px] flex justify-between items-center text-gray-500 text-xs font-monospaced">
+        <p>&copy;2025 | All rights reserved. </p>
+        <p>Developed by MohammadAsif34</p>
+      </div>
+
       {/* <div className="absolute top-4 left-4 text-gray-500">
         val: {val} <br />
         val1: {val1} <br />

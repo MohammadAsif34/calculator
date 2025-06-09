@@ -3,6 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Mohammad Asif Hasnain",
+  "description": "A simple calculator frontend using React and Vite",
+  "keywords": [
+    "calculator",
+    "react",
+    "vite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MohammadAsif34/calculator.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
