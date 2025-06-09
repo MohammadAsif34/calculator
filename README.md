@@ -1,6 +1,5 @@
 ## 🧮 React Calculator App
 A sleek, user-friendly calculator application built with **React.js**, styled using **Tailwind CSS**, and enhanced with **Bootstrap Icons** and **Font Awesome**. It features a clean grid-based layout with light/dark mode toggle and a tabbed interface for `CONVERTER` and `CALCULATOR`.
----
 
 ## 🌟 Live Preview
 ![React Calculator UI](./demo1.png)
