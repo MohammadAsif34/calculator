@@ -1,10 +1,12 @@
 ## Installation Guide:
 ## Tools Used:
-- React JS
-- javascript
-- Tailwind CSS
-- Bootstrap Icon
-- Fontawesome Icon
+<div style={{display:grid, grid-template-col:2fr}}>
+  - React JS
+  - javascript
+  - Tailwind CSS
+  - Bootstrap Icon
+  - Fontawesome Icon
+</div>
 
 ## UI/UX
 ![image](https://github.com/user-attachments/assets/5c3378ae-150f-471c-9d73-45f093c8aec2)
