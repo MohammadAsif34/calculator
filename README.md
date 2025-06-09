@@ -40,7 +40,7 @@ react-calculator/
 ## 📜 License
 This project is open-source and licensed under the MIT License.
 ## 👨‍💻 Author
-Md Ásïf
+**Mohammad Asif Hasnain**
 Frontend Developer & UI/UX Enthusiast
 GitHub | Portfolio
 
