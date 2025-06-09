@@ -1,9 +1,8 @@
 import React, { use, useContext, useEffect, useRef, useState } from "react";
-import CalcContext from "../calcContext/CalcContext";
-import { keys, nums, operators, compute } from "../utils/function";
+import CalcContext from "../../calcContext/CalcContext";
+import { keys, nums, operators, compute } from "../../utils/function";
 
-const KeyPad = () => {
-  //   const [sign, setSign] = useState("");
+const KeyPadCalculator = () => {
   const sign = useRef("");
 
   const {
@@ -18,6 +17,7 @@ const KeyPad = () => {
     setResult,
     calc,
     setCalc,
+    theme,
   } = useContext(CalcContext);
 
   useEffect(() => {
@@ -97,11 +97,21 @@ const KeyPad = () => {
           return (
             <button
               key={idx}
-              className={`border border-gray-200 rounded-sm cursor-pointer ${
-                isNum
-                  ? "hover:bg-blue-50 hover:border-blue-300"
-                  : "bg-blue-50 hover:bg-blue-100 hover:border-blue-300 text-blue-500"
-              }`}
+              className={`border border-gray-200 rounded-sm cursor-pointer 
+                ${
+                  isNum
+                    ? "hover:bg-blue-50 hover:border-blue-300"
+                    : `bg-blue-50 hover:bg-blue-100 hover:border-blue-300 text-blue-500 ${
+                        theme ? "dark:bg-[#212327] text-blue" : ""
+                      }`
+                }
+                ${
+                  theme
+                    ? `dark:bg-[#272a30] dark:text-gray-300 dark:border-gray-800 hover:dark:bg-[#212327] dark:hover:border-blue-500 ${
+                        !isNum ? "dark:text-blue-500" : ""
+                      }`
+                    : ""
+                }`}
               onClick={() => handleInput(keys.value)}
             >
               {keys.label}
@@ -109,7 +119,12 @@ const KeyPad = () => {
           );
         })}
         <button
-          className={`col-span-2 border border-gray-200 rounded-sm cursor-pointer bg-blue-50 hover:bg-blue-100 hover:border-blue-300 text-blue-500`}
+          className={`col-span-2 border border-gray-200 rounded-sm cursor-pointer bg-blue-50 hover:bg-blue-100 hover:border-blue-300 text-blue-500
+            ${
+              theme
+                ? "dark:bg-[#212327] dark:text-gray-400 dark:border-gray-800 hover:dark:bg-[#212327] dark:hover:border-blue-500"
+                : ""
+            }`}
           onClick={() => endCalc()}
         >
           {"="}
@@ -119,4 +134,4 @@ const KeyPad = () => {
   );
 };
 
-export default KeyPad;
+export default KeyPadCalculator;

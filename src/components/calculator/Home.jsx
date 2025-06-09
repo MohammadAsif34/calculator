@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import KeyPad from "./KeyPad";
-import CalcContext from "../calcContext/CalcContext";
+import CalcContext from "../../calcContext/CalcContext";
 
 const Home = () => {
   const {
