@@ -27,8 +27,8 @@ A sleek, user-friendly calculator application built with **React.js**, styled us
 ## 
 
 ## Project Structure
-react-calculator/
-├── public/  
+react-calculator/    
+├─ public/  
 │ └── index.html  
 ├── src/  
 │ ├── components/  
