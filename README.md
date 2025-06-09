@@ -1,14 +1,48 @@
 ## Installation Guide:
 ## 🛠 Tools Used
-- ⚛️ React JS  
-- 📜 JavaScript  
-- 🎨 Tailwind CSS  
-- 🧩 Bootstrap Icons  
-- ⭐ Font Awesome Icons
+- **React JS** – Frontend Framework
+- **JavaScript** – Logic Implementation
+- **Tailwind CSS** – Styling Utility Framework
+- **Bootstrap Icons** – UI Icons
+- **Font Awesome** – Extended Icon Set
 
 
 ## UI/UX
 ![image](https://github.com/user-attachments/assets/5c3378ae-150f-471c-9d73-45f093c8aec2)
+
+## Project Structure
+react-calculator/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── Calculator.jsx
+│ │ └── Converter.jsx
+│ ├── App.jsx
+│ ├── index.js
+│ └── styles/
+│ └── tailwind.css
+├── package.json
+└── tailwind.config.js
+## 🧪 Example Interactions
+- Click C to clear
+- Use backspace icon to delete last digit
+- Switch between Calculator and Converter tabs
+- Perform expressions like 7 × 5, 9 + 3 and get results
+- Toggle dark/light mode from the moon icon
+
+## 🔮 Future Improvements
+- Implement full Converter tab logic
+- Add scientific calculator functions (log, sin, π)
+- Add history and memory functions
+- Mobile-first improvements and accessibility enhancements
+  
+## 📜 License
+This project is open-source and licensed under the MIT License.
+## 👨‍💻 Author
+Md Ásïf
+Frontend Developer & UI/UX Enthusiast
+GitHub | Portfolio
 
 
 
