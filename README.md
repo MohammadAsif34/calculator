@@ -58,7 +58,7 @@ This project is open-source and licensed under the MIT License.
 ## 👨‍💻 Author
 **Mohammad Asif Hasnain**  
  Frontend Developer & UI/UX Enthusiast  
- GitHub | Portfolio
+ [GitHub](https://github.com/MohammadAsif34) | Portfolio
 
 
 
