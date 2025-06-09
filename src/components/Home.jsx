@@ -1,23 +1,67 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Home = () => {
   const [mode, setMode] = useState("calculator");
   const [theme, setTheme] = useState(false);
   const [exp, setExp] = useState("");
-  const [op1, setOp1] = useState(0);
-  const [op2, setOp2] = useState(0);
-  const [op3, setOp3] = useState();
+  const [val, setVal] = useState("");
+  const [val1, setVal1] = useState(null);
+  const [val2, setVal2] = useState(null);
+  const [op, setOp] = useState("");
 
   const handleInput = (value) => {
     setExp((prev) => prev + value);
+    setVal((prev) => prev + value);
   };
   const handleOperator = (value) => {
+    calc();
+    setOp(value);
     setExp((prev) => prev + value);
-    setOp1;
+    if (val1 === null) {
+      setVal1(Number(val));
+      setVal("");
+    } else {
+      setVal2(Number(val));
+      setVal("");
+    }
+  };
+  const calc = () => {
+    if (val1 !== null && val2 !== null && op) {
+      let result;
+      switch (op) {
+        case "+":
+          result = val1 + val2;
+          break;
+        case "-":
+          result = val1 - val2;
+          break;
+        case "x":
+          result = val1 * val2;
+          break;
+        case "/":
+          result = val1 / val2;
+          break;
+        case "%":
+          result = (val1 * val2) / 100;
+          break;
+        default:
+          return;
+      }
+      setVal1(result);
+      setVal2(null);
+      setOp("");
+      // setVal(result.toString());
+      // setExp("");
+    }
   };
 
   return (
     <div className="w-full h-screen flex justify-center items-center bg-blue-50">
+      <div className="absolute top-4 left-4 text-gray-500">
+        val1: {val1} <br />
+        val2: {val2} <br />
+        op: {op} <br />
+      </div>
       <div className="w-[500px] h-[550px] py-4 px-6 flex flex-col border border-gray-100 rounded-xl shadow-xl bg-white">
         <div className="w-full flex gap-4 text-gray-300 text-sm font-semibold ">
           <button
@@ -55,6 +99,8 @@ const Home = () => {
             type="text"
             className="w-full h-10 px-3 text-right outline-none "
             disabled
+            placeholder=" "
+            value={val}
           />
           <input
             type="text"
@@ -65,7 +111,7 @@ const Home = () => {
           <input
             type="text"
             className="w-full h-10 px-3 text-right outline-none "
-            value={op3}
+            value={val1}
             disabled
           />
         </div>
