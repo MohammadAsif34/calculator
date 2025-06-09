@@ -28,18 +28,18 @@ A sleek, user-friendly calculator application built with **React.js**, styled us
 
 ## Project Structure
 react-calculator/
-├── public/
-│ └── index.html
-├── src/
-│ ├── components/
-│ │ ├── Calculator.jsx
-│ │ └── Converter.jsx
-│ ├── App.jsx
-│ ├── index.js
-│ └── styles/
-│ └── tailwind.css
-├── package.json
-└── tailwind.config.js
+├── public/  
+│ └── index.html  
+├── src/  
+│ ├── components/  
+│ │ ├── Calculator.jsx  
+│ │ └── Converter.jsx  
+│ ├── App.jsx  
+│ ├── index.js  
+│ └── styles/  
+│ └── tailwind.css  
+├── package.json  
+└── tailwind.config.js  
 ## 🧪 Example Interactions
 - Click C to clear
 - Use backspace icon to delete last digit
